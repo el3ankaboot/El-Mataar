@@ -15,7 +15,13 @@ extension UIView {
         get{return self.viewCornerRadius}
     }
 
-
+    func showShadow(){
+        self.layer.shadowColor = UIColor.black.withAlphaComponent(0.2).cgColor
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        self.layer.shadowRadius = 4.0
+        self.layer.shadowOpacity = 0.5
+        self.layer.masksToBounds = false
+    }
 }
 
 extension UITableView {

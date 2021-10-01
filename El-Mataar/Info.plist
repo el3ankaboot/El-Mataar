@@ -6,6 +6,7 @@
 	<array>
 		<string>Vodafone Lt Regular.ttf</string>
 		<string>Vodafone Rg Regular.ttf</string>
+		<string>Vodafone Rg Bold.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

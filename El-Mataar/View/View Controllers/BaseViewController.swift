@@ -20,12 +20,13 @@ class BaseViewController : UIViewController{
         setNavBarColorToWhite()
         showNavBarShadow()
         setupNavigationBarTitleFont()
+        removeBackButtonTitle()
         
     }
     func setNavBarColorToWhite(){
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barTintColor = .white
-        navigationController?.navigationBar.tintColor = .black
+        navigationController?.navigationBar.tintColor = UIColor(named: "App Tint Color")
     }
     func showNavBarShadow(){
         navigationController?.navigationBar.layer.shadowColor = UIColor.black.withAlphaComponent(0.2).cgColor
@@ -36,7 +37,9 @@ class BaseViewController : UIViewController{
     }
     func setupNavigationBarTitleFont(){
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Vodafone Rg Regular", size: 24)!]
-
+    }
+    func removeBackButtonTitle(){
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
 }

@@ -17,19 +17,11 @@ class AirlinesTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         setupInset()
-        setupShadow()
+        contentView.showShadow()
     }
     //MARK: Helpers
     func setupInset(){
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 20, bottom: 5, right: 20))
-    }
-    
-    func setupShadow(){
-        contentView.layer.shadowColor = UIColor.black.withAlphaComponent(0.2).cgColor
-        contentView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        contentView.layer.shadowRadius = 4.0
-        contentView.layer.shadowOpacity = 0.5
-        contentView.layer.masksToBounds = false
     }
     
     
