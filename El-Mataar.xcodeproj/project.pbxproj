@@ -21,6 +21,7 @@
 		BA0D781A2707A84A002938AB /* Vodafone Rg Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA0D78192707A84A002938AB /* Vodafone Rg Regular.ttf */; };
 		BA0D781C2707C2A0002938AB /* AirLineDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D781B2707C2A0002938AB /* AirLineDetailsViewController.swift */; };
 		BA0D78202707CC7C002938AB /* Vodafone Rg Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA0D781F2707CC7C002938AB /* Vodafone Rg Bold.ttf */; };
+		BA0D78282707E79B002938AB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0D78272707E79B002938AB /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		BA0D78192707A84A002938AB /* Vodafone Rg Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vodafone Rg Regular.ttf"; sourceTree = "<group>"; };
 		BA0D781B2707C2A0002938AB /* AirLineDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirLineDetailsViewController.swift; sourceTree = "<group>"; };
 		BA0D781F2707CC7C002938AB /* Vodafone Rg Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vodafone Rg Bold.ttf"; sourceTree = "<group>"; };
+		BA0D78272707E79B002938AB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				BA0D780F2707943B002938AB /* Info.plist */,
 				BA0D77D627078254002938AB /* AppDelegate.swift */,
 				BA0D77DF27078254002938AB /* Assets.xcassets */,
+				BA0D78272707E79B002938AB /* Colors.xcassets */,
 			);
 			path = "El-Mataar";
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				BA0D77DE27078254002938AB /* Main.storyboard in Resources */,
 				BA0D78202707CC7C002938AB /* Vodafone Rg Bold.ttf in Resources */,
 				BA0D781227079DD7002938AB /* Vodafone Lt Regular.ttf in Resources */,
+				BA0D78282707E79B002938AB /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
