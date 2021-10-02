@@ -36,7 +36,9 @@ class BaseViewController : UIViewController{
         navigationController?.navigationBar.layer.masksToBounds = false
     }
     func setupNavigationBarTitleFont(){
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Vodafone Rg Regular", size: 24)!]
+        if let vodafoneFont = UIFont(name: "Vodafone Rg Regular", size: 24){
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: vodafoneFont]
+        }
     }
     func removeBackButtonTitle(){
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)

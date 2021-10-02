@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EB7349A167724ABA756F3C9 /* libPods-El-MataarTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C7FE0B63CE569042618ED6 /* libPods-El-MataarTests.a */; };
 		BA0D77D727078254002938AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D77D627078254002938AB /* AppDelegate.swift */; };
 		BA0D77DB27078254002938AB /* AirlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D77DA27078254002938AB /* AirlinesViewController.swift */; };
 		BA0D77DE27078254002938AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0D77DC27078254002938AB /* Main.storyboard */; };
@@ -22,6 +23,10 @@
 		BA0D781C2707C2A0002938AB /* AirLineDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D781B2707C2A0002938AB /* AirLineDetailsViewController.swift */; };
 		BA0D78202707CC7C002938AB /* Vodafone Rg Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA0D781F2707CC7C002938AB /* Vodafone Rg Bold.ttf */; };
 		BA0D78282707E79B002938AB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0D78272707E79B002938AB /* Colors.xcassets */; };
+		BA0D782A2707F0C6002938AB /* AddAirLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D78292707F0C6002938AB /* AddAirLineViewController.swift */; };
+		BA0D782C2707F554002938AB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D782B2707F554002938AB /* Router.swift */; };
+		BA0D782E2707F885002938AB /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D782D2707F885002938AB /* UIApplicationExtension.swift */; };
+		EEE7CCC352ABD6C0EA51A114 /* libPods-El-Mataar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 195C51960970FCC677A83DB0 /* libPods-El-Mataar.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C7FE0B63CE569042618ED6 /* libPods-El-MataarTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-El-MataarTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		195C51960970FCC677A83DB0 /* libPods-El-Mataar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-El-Mataar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75481CCDCDB7D4871359E661 /* Pods-El-Mataar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-Mataar.release.xcconfig"; path = "Target Support Files/Pods-El-Mataar/Pods-El-Mataar.release.xcconfig"; sourceTree = "<group>"; };
 		BA0D77D327078254002938AB /* El-Mataar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El-Mataar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0D77D627078254002938AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA0D77DA27078254002938AB /* AirlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +71,12 @@
 		BA0D781B2707C2A0002938AB /* AirLineDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirLineDetailsViewController.swift; sourceTree = "<group>"; };
 		BA0D781F2707CC7C002938AB /* Vodafone Rg Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vodafone Rg Bold.ttf"; sourceTree = "<group>"; };
 		BA0D78272707E79B002938AB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		BA0D78292707F0C6002938AB /* AddAirLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAirLineViewController.swift; sourceTree = "<group>"; };
+		BA0D782B2707F554002938AB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		BA0D782D2707F885002938AB /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		E330847CEAA1EC5A60854F38 /* Pods-El-MataarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-MataarTests.release.xcconfig"; path = "Target Support Files/Pods-El-MataarTests/Pods-El-MataarTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2A82A14CA196F2D95D85A9B /* Pods-El-Mataar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-Mataar.debug.xcconfig"; path = "Target Support Files/Pods-El-Mataar/Pods-El-Mataar.debug.xcconfig"; sourceTree = "<group>"; };
+		F63B0DCF8785EBA2906245D5 /* Pods-El-MataarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-MataarTests.debug.xcconfig"; path = "Target Support Files/Pods-El-MataarTests/Pods-El-MataarTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE7CCC352ABD6C0EA51A114 /* libPods-El-Mataar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB7349A167724ABA756F3C9 /* libPods-El-MataarTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F7D8667B2BC182003816FA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				195C51960970FCC677A83DB0 /* libPods-El-Mataar.a */,
+				00C7FE0B63CE569042618ED6 /* libPods-El-MataarTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA0D77CA27078254002938AB = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +122,8 @@
 				BA0D77EC27078255002938AB /* El-MataarTests */,
 				BA0D77F727078255002938AB /* El-MataarUITests */,
 				BA0D77D427078254002938AB /* Products */,
+				CDA8CD003AD37A4C0BDA6F31 /* Pods */,
+				7F7D8667B2BC182003816FA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				BA0D780727078F6C002938AB /* UIViewsExtensions.swift */,
+				BA0D782D2707F885002938AB /* UIApplicationExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -166,6 +194,7 @@
 				BA0D78172707A370002938AB /* BaseViewController.swift */,
 				BA0D77DA27078254002938AB /* AirlinesViewController.swift */,
 				BA0D781B2707C2A0002938AB /* AirLineDetailsViewController.swift */,
+				BA0D78292707F0C6002938AB /* AddAirLineViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -191,10 +220,22 @@
 		BA0D781427079DF8002938AB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				BA0D782B2707F554002938AB /* Router.swift */,
 				BA0D780627078F5D002938AB /* Extensions */,
 				BA0D781327079DE7002938AB /* Fonts */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CDA8CD003AD37A4C0BDA6F31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2A82A14CA196F2D95D85A9B /* Pods-El-Mataar.debug.xcconfig */,
+				75481CCDCDB7D4871359E661 /* Pods-El-Mataar.release.xcconfig */,
+				F63B0DCF8785EBA2906245D5 /* Pods-El-MataarTests.debug.xcconfig */,
+				E330847CEAA1EC5A60854F38 /* Pods-El-MataarTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA0D77FD27078255002938AB /* Build configuration list for PBXNativeTarget "El-Mataar" */;
 			buildPhases = (
+				4F1BF568C34D5F48181C1887 /* [CP] Check Pods Manifest.lock */,
 				BA0D77CF27078254002938AB /* Sources */,
 				BA0D77D027078254002938AB /* Frameworks */,
 				BA0D77D127078254002938AB /* Resources */,
@@ -221,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA0D780027078255002938AB /* Build configuration list for PBXNativeTarget "El-MataarTests" */;
 			buildPhases = (
+				F83C3C78DF41167C1F660A1B /* [CP] Check Pods Manifest.lock */,
 				BA0D77E527078255002938AB /* Sources */,
 				BA0D77E627078255002938AB /* Frameworks */,
 				BA0D77E727078255002938AB /* Resources */,
@@ -326,15 +369,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F1BF568C34D5F48181C1887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-El-Mataar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F83C3C78DF41167C1F660A1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-El-MataarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA0D77CF27078254002938AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0D782C2707F554002938AB /* Router.swift in Sources */,
 				BA0D78182707A370002938AB /* BaseViewController.swift in Sources */,
+				BA0D782A2707F0C6002938AB /* AddAirLineViewController.swift in Sources */,
 				BA0D780E27079389002938AB /* AirlinesTableViewCell.swift in Sources */,
 				BA0D77DB27078254002938AB /* AirlinesViewController.swift in Sources */,
 				BA0D780827078F6C002938AB /* UIViewsExtensions.swift in Sources */,
+				BA0D782E2707F885002938AB /* UIApplicationExtension.swift in Sources */,
 				BA0D781C2707C2A0002938AB /* AirLineDetailsViewController.swift in Sources */,
 				BA0D77D727078254002938AB /* AppDelegate.swift in Sources */,
 			);
@@ -509,6 +602,7 @@
 		};
 		BA0D77FE27078255002938AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2A82A14CA196F2D95D85A9B /* Pods-El-Mataar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -522,12 +616,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Gemy.El-Mataar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BA0D77FF27078255002938AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75481CCDCDB7D4871359E661 /* Pods-El-Mataar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -541,12 +636,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Gemy.El-Mataar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		BA0D780127078255002938AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63B0DCF8785EBA2906245D5 /* Pods-El-MataarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -568,6 +664,7 @@
 		};
 		BA0D780227078255002938AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E330847CEAA1EC5A60854F38 /* Pods-El-MataarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

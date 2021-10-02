@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FittedSheets
 
 class AirlinesViewController: BaseViewController {
     
@@ -17,6 +18,11 @@ class AirlinesViewController: BaseViewController {
         super.viewDidLoad()
         navigationItem.title = "Countries"
         setupTableView()
+    }
+    
+    //MARK:- Actions
+    @IBAction func didPressAddAirline(_ sender: Any) {
+        Router.openSheet(.addAirLines, withSizes: [.percent(0.7),.percent(0.95)])
     }
     
 }
@@ -43,9 +49,7 @@ extension AirlinesViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let airLineDetailsViewController = storyBoard.instantiateViewController(withIdentifier: String(describing: AirLineDetailsViewController.self)) as! AirLineDetailsViewController
-        navigationController?.pushViewController(airLineDetailsViewController, animated: true)
+        Router.navigateTo(.airLineDetails)
     }
     
 }

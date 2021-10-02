@@ -45,3 +45,17 @@ extension UITableView {
         return self.dequeueReusableCell(withIdentifier: String(describing: type.self), for: indexPath) as! T
     }
 }
+
+//MARK:- UIViewController
+extension UIViewController{
+    class var storyboardID : String {
+        return "\(self)"
+    }
+    
+    static func instantiate() -> Self {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: String(describing: self)) as! Self
+        return vc
+    }
+}
+
