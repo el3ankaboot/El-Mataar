@@ -17,7 +17,6 @@
 		BA0D780827078F6C002938AB /* UIViewsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D780727078F6C002938AB /* UIViewsExtensions.swift */; };
 		BA0D780E27079389002938AB /* AirlinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D780D27079389002938AB /* AirlinesTableViewCell.swift */; };
 		BA0D781227079DD7002938AB /* Vodafone Lt Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA0D781127079DD7002938AB /* Vodafone Lt Regular.ttf */; };
-		BA0D78162707A25A002938AB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0D78152707A25A002938AB /* Colors.xcassets */; };
 		BA0D78182707A370002938AB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D78172707A370002938AB /* BaseViewController.swift */; };
 		BA0D781A2707A84A002938AB /* Vodafone Rg Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA0D78192707A84A002938AB /* Vodafone Rg Regular.ttf */; };
 		BA0D781C2707C2A0002938AB /* AirLineDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D781B2707C2A0002938AB /* AirLineDetailsViewController.swift */; };
@@ -58,7 +57,6 @@
 		BA0D780D27079389002938AB /* AirlinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesTableViewCell.swift; sourceTree = "<group>"; };
 		BA0D780F2707943B002938AB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA0D781127079DD7002938AB /* Vodafone Lt Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vodafone Lt Regular.ttf"; sourceTree = "<group>"; };
-		BA0D78152707A25A002938AB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		BA0D78172707A370002938AB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BA0D78192707A84A002938AB /* Vodafone Rg Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vodafone Rg Regular.ttf"; sourceTree = "<group>"; };
 		BA0D781B2707C2A0002938AB /* AirLineDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirLineDetailsViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				BA0D780F2707943B002938AB /* Info.plist */,
 				BA0D77D627078254002938AB /* AppDelegate.swift */,
 				BA0D77DF27078254002938AB /* Assets.xcassets */,
-				BA0D78152707A25A002938AB /* Colors.xcassets */,
 			);
 			path = "El-Mataar";
 			sourceTree = "<group>";
@@ -300,7 +297,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA0D78162707A25A002938AB /* Colors.xcassets in Resources */,
 				BA0D77E327078254002938AB /* LaunchScreen.storyboard in Resources */,
 				BA0D781A2707A84A002938AB /* Vodafone Rg Regular.ttf in Resources */,
 				BA0D77E027078254002938AB /* Assets.xcassets in Resources */,
