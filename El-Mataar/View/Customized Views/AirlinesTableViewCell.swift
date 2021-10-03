@@ -24,6 +24,10 @@ class AirlinesTableViewCell: UITableViewCell {
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 20, bottom: 5, right: 20))
     }
     
+    //MARK: Configure
+    func configureCell(withViewModel viewModel: AirLinesTableCellViewModel){
+        self.airlineNameLabel.text = viewModel.name
+    }
     
 
 }

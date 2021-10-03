@@ -37,11 +37,35 @@ class BaseViewController : UIViewController{
     }
     func setupNavigationBarTitleFont(){
         if let vodafoneFont = UIFont(name: "Vodafone Rg Regular", size: 24){
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: vodafoneFont]
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: vodafoneFont]
         }
     }
     func removeBackButtonTitle(){
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
+    
+    //MARK: Alert
+    func showAlertMessage(title: String , message: String , okBtnAction: (() -> Void)?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okTitle = "Ok"
+        alert.addAction(UIAlertAction(title: okTitle, style: .default, handler: { (action) in
+            okBtnAction?()
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showErrorAlert(){
+        showAlertMessage(title: "Error", message: "Something went wrong", okBtnAction: nil)
+    }
+    
+    //MARK: ActivityIndicator
+    func animateActivityIndicator(_ activityIndicator:UIActivityIndicatorView){
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+    }
+    func stopAnimating(_ activityIndicator:UIActivityIndicatorView){
+        activityIndicator.isHidden = true
+        activityIndicator.stopAnimating()
+    }
 }

@@ -12,6 +12,7 @@ extension UIApplication {
 
     class func getTopViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
 
+        
         if let nav = base as? UINavigationController {
             return getTopViewController(base: nav.visibleViewController)
 

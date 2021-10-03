@@ -26,6 +26,11 @@
 		BA0D782A2707F0C6002938AB /* AddAirLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D78292707F0C6002938AB /* AddAirLineViewController.swift */; };
 		BA0D782C2707F554002938AB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D782B2707F554002938AB /* Router.swift */; };
 		BA0D782E2707F885002938AB /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D782D2707F885002938AB /* UIApplicationExtension.swift */; };
+		BAB6C77C270A4450007A6EE4 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6C77B270A4450007A6EE4 /* Observable.swift */; };
+		BAB6C77F270A4665007A6EE4 /* AirLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6C77E270A4665007A6EE4 /* AirLine.swift */; };
+		BAB6C782270A4856007A6EE4 /* AirLinesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6C781270A4856007A6EE4 /* AirLinesTableViewModel.swift */; };
+		BAB6C784270A4C54007A6EE4 /* ElMataarAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6C783270A4C54007A6EE4 /* ElMataarAPIClient.swift */; };
+		BAB6C787270A56F8007A6EE4 /* ElMataarAPIClient+requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6C786270A56F8007A6EE4 /* ElMataarAPIClient+requests.swift */; };
 		EEE7CCC352ABD6C0EA51A114 /* libPods-El-Mataar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 195C51960970FCC677A83DB0 /* libPods-El-Mataar.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +79,11 @@
 		BA0D78292707F0C6002938AB /* AddAirLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAirLineViewController.swift; sourceTree = "<group>"; };
 		BA0D782B2707F554002938AB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		BA0D782D2707F885002938AB /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		BAB6C77B270A4450007A6EE4 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		BAB6C77E270A4665007A6EE4 /* AirLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirLine.swift; sourceTree = "<group>"; };
+		BAB6C781270A4856007A6EE4 /* AirLinesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirLinesTableViewModel.swift; sourceTree = "<group>"; };
+		BAB6C783270A4C54007A6EE4 /* ElMataarAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElMataarAPIClient.swift; sourceTree = "<group>"; };
+		BAB6C786270A56F8007A6EE4 /* ElMataarAPIClient+requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElMataarAPIClient+requests.swift"; sourceTree = "<group>"; };
 		E330847CEAA1EC5A60854F38 /* Pods-El-MataarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-MataarTests.release.xcconfig"; path = "Target Support Files/Pods-El-MataarTests/Pods-El-MataarTests.release.xcconfig"; sourceTree = "<group>"; };
 		F2A82A14CA196F2D95D85A9B /* Pods-El-Mataar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-Mataar.debug.xcconfig"; path = "Target Support Files/Pods-El-Mataar/Pods-El-Mataar.debug.xcconfig"; sourceTree = "<group>"; };
 		F63B0DCF8785EBA2906245D5 /* Pods-El-MataarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-MataarTests.debug.xcconfig"; path = "Target Support Files/Pods-El-MataarTests/Pods-El-MataarTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +150,9 @@
 		BA0D77D527078254002938AB /* El-Mataar */ = {
 			isa = PBXGroup;
 			children = (
+				BAB6C77D270A44EA007A6EE4 /* Model */,
 				BA0D780927079300002938AB /* View */,
+				BAB6C780270A4841007A6EE4 /* View Model */,
 				BA0D781427079DF8002938AB /* Helpers */,
 				BA0D780F2707943B002938AB /* Info.plist */,
 				BA0D77D627078254002938AB /* AppDelegate.swift */,
@@ -220,11 +232,38 @@
 		BA0D781427079DF8002938AB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				BAB6C77B270A4450007A6EE4 /* Observable.swift */,
 				BA0D782B2707F554002938AB /* Router.swift */,
 				BA0D780627078F5D002938AB /* Extensions */,
 				BA0D781327079DE7002938AB /* Fonts */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BAB6C77D270A44EA007A6EE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6C77E270A4665007A6EE4 /* AirLine.swift */,
+				BAB6C785270A56E3007A6EE4 /* ElMataar API */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAB6C780270A4841007A6EE4 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6C781270A4856007A6EE4 /* AirLinesTableViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		BAB6C785270A56E3007A6EE4 /* ElMataar API */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6C783270A4C54007A6EE4 /* ElMataarAPIClient.swift */,
+				BAB6C786270A56F8007A6EE4 /* ElMataarAPIClient+requests.swift */,
+			);
+			path = "ElMataar API";
 			sourceTree = "<group>";
 		};
 		CDA8CD003AD37A4C0BDA6F31 /* Pods */ = {
@@ -422,12 +461,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA0D782C2707F554002938AB /* Router.swift in Sources */,
+				BAB6C77F270A4665007A6EE4 /* AirLine.swift in Sources */,
 				BA0D78182707A370002938AB /* BaseViewController.swift in Sources */,
 				BA0D782A2707F0C6002938AB /* AddAirLineViewController.swift in Sources */,
 				BA0D780E27079389002938AB /* AirlinesTableViewCell.swift in Sources */,
 				BA0D77DB27078254002938AB /* AirlinesViewController.swift in Sources */,
+				BAB6C782270A4856007A6EE4 /* AirLinesTableViewModel.swift in Sources */,
 				BA0D780827078F6C002938AB /* UIViewsExtensions.swift in Sources */,
+				BAB6C77C270A4450007A6EE4 /* Observable.swift in Sources */,
 				BA0D782E2707F885002938AB /* UIApplicationExtension.swift in Sources */,
+				BAB6C787270A56F8007A6EE4 /* ElMataarAPIClient+requests.swift in Sources */,
+				BAB6C784270A4C54007A6EE4 /* ElMataarAPIClient.swift in Sources */,
 				BA0D781C2707C2A0002938AB /* AirLineDetailsViewController.swift in Sources */,
 				BA0D77D727078254002938AB /* AppDelegate.swift in Sources */,
 			);

@@ -12,12 +12,36 @@ class AirlinesViewController: BaseViewController {
     
     //MARK:- Outlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    //MARK:- Variables
+    private var viewModel = AirLinesTableViewModel()
     
     //MARK:- Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Countries"
         setupTableView()
+        getData()
+    }
+    
+    //MARK: GetData
+    func getData(){
+        self.animateActivityIndicator(activityIndicator)
+        viewModel.getData()
+        viewModel.airLinesDataSource.bind {[weak self] _ in
+            self?.tableView.reloadData()
+            if let activityIndicator = self?.activityIndicator{
+                self?.stopAnimating(activityIndicator)
+            }
+            
+        }
+        viewModel.didFail.bind { [weak self] fail in
+            if fail {
+                self?.showErrorAlert()
+            }
+        }
+        
     }
     
     //MARK:- Actions
@@ -36,11 +60,13 @@ extension AirlinesViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return viewModel.getAirLinesTableViewCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(with: AirlinesTableViewCell.self, for: indexPath)
+        let cellViewModel = viewModel.getAirLineForRow(indexPath.row)
+        cell.configureCell(withViewModel: cellViewModel)
         return cell
     }
     
@@ -49,7 +75,7 @@ extension AirlinesViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        Router.navigateTo(.airLineDetails)
+        viewModel.handleCellSelection(indexPath.row)
     }
     
 }
