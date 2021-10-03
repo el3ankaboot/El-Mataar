@@ -12,6 +12,13 @@ class AirLineDetailsViewController: BaseViewController {
     
     //MARK:- Outlets
     @IBOutlet weak var detailsView: UIView!
+    @IBOutlet weak var airLineNameLabel: UILabel!
+    @IBOutlet weak var airLineCountryLabel: UILabel!
+    @IBOutlet weak var airLineSloganLabel: UILabel!
+    @IBOutlet weak var airLineAddressLabel: UILabel!
+    
+    //MARK:- Injections
+    var viewModel: AirLineDetailsViewModel!
     
     
     //MARK:- Life Cycle
@@ -19,5 +26,14 @@ class AirLineDetailsViewController: BaseViewController {
         super.viewDidLoad()
         navigationItem.title = "Countries"
         detailsView.showShadow()
+        fillTheData()
+    }
+    
+    //MARK: filling Data from View Model
+    func fillTheData(){
+        self.airLineNameLabel.text = viewModel.name
+        self.airLineCountryLabel.text = viewModel.country
+        self.airLineSloganLabel.text = viewModel.slogan
+        self.airLineAddressLabel.text = viewModel.address
     }
 }

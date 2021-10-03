@@ -8,12 +8,15 @@
 import Foundation
 
 struct AirLinesTableCellViewModel {
+    let id : Int
     let name : String
 }
 
-struct AirLinesTableViewModel {
+class AirLinesTableViewModel {
     var airLinesDataSource : Observable<[AirLinesTableCellViewModel]> = Observable([])
-    var allAirLines : [AirLinesTableCellViewModel] = [] //To Handle Search
+    var allAirLines : AirLines = [] //To Handle Search
+    
+    
     
     var didFail : Observable<Bool> = Observable(false)
     
@@ -25,15 +28,31 @@ struct AirLinesTableViewModel {
         return airLinesDataSource.value.count
     }
     func handleCellSelection(_ cellIndex: Int){
-        Router.navigateTo(.airLineDetails)
+        var airLine: AirLine? = nil
+        if allAirLines.count == airLinesDataSource.value.count {
+            //No Search
+            airLine = allAirLines[cellIndex]
+        }
+        else {
+            //Search is applied
+            airLine = allAirLines.first(where: { airline in
+                airline.id == airLinesDataSource.value[cellIndex].id
+            })
+        }
+        if let airLine = airLine{
+            let viewModel = AirLineDetailsViewModel(withAirLine: airLine)
+            Router.navigateTo(.airLineDetails(airLineDetailsViewModel: viewModel))
+        }
+
     }
     
     //MARK: Fetch Data
     func getData(){
         ElMataarAPIClient.shared.getAirLines { response in
             self.airLinesDataSource.value = response.compactMap({ airLine in
-                AirLinesTableCellViewModel(name: airLine.name ?? "")
+                AirLinesTableCellViewModel(id: airLine.id ?? 0, name: airLine.name ?? "")
             })
+            self.allAirLines = response
         } onError: {
             self.didFail.value = true
         }

@@ -28,13 +28,15 @@ class Router{
 
 
 enum NavigationTarget {
-    case airLineDetails
+    case airLineDetails(airLineDetailsViewModel: AirLineDetailsViewModel)
     case addAirLines
     
     func getViewController()-> UIViewController{
         switch self {
-        case .airLineDetails:
-            return AirLineDetailsViewController.instantiate()
+        case .airLineDetails(let airLineDetailsViewModel):
+            let vc = AirLineDetailsViewController.instantiate()
+            vc.viewModel = airLineDetailsViewModel
+            return vc
         case .addAirLines:
             return AddAirLineViewController.instantiate()
         }
