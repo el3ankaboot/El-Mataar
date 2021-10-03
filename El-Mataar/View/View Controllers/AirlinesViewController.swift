@@ -13,6 +13,7 @@ class AirlinesViewController: BaseViewController {
     //MARK:- Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var searchTextField: UITextField!
     
     //MARK:- Variables
     private var viewModel = AirLinesTableViewModel()
@@ -48,6 +49,19 @@ class AirlinesViewController: BaseViewController {
     @IBAction func didPressAddAirline(_ sender: Any) {
         Router.openSheet(.addAirLines, withSizes: [.percent(0.7),.percent(0.95)])
     }
+    
+    @IBAction func didPressSearch(_ sender: Any) {
+        if let searchText = searchTextField.text {
+            viewModel.search(forName: searchText)
+        }
+    }
+    
+    @IBAction func textFieldEditingChanged(_ sender: Any) {
+        if !((sender as! UITextField).isNotEmpty()){
+            viewModel.search(forName: "")
+        }
+    }
+    
     
 }
 

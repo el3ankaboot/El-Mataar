@@ -16,7 +16,7 @@ class AirLinesTableViewModel {
     //MARK: Variables
     var airLinesDataSource : Observable<[AirLinesTableCellViewModel]> = Observable([])
     var allAirLines : AirLines = [] //To Handle Search and forming DetailsViewModel
-
+    
     var didFail : Observable<Bool> = Observable(false)
     
     
@@ -43,7 +43,7 @@ class AirLinesTableViewModel {
             let viewModel = AirLineDetailsViewModel(withAirLine: airLine)
             Router.navigateTo(.airLineDetails(airLineDetailsViewModel: viewModel))
         }
-
+        
     }
     
     //MARK: Fetch Data
@@ -56,6 +56,20 @@ class AirLinesTableViewModel {
         } onError: {
             self.didFail.value = true
         }
-
+        
+    }
+    
+    //MARK: Search
+    func search(forName name: String){
+        //Retrun to original state first
+        self.airLinesDataSource.value = allAirLines.compactMap({ airLine in
+            AirLinesTableCellViewModel(id: airLine.id ?? 0, name: airLine.name ?? "")
+        })
+        if name != "" {
+            //Filter from all data
+            self.airLinesDataSource.value = self.airLinesDataSource.value.filter({ airLine in
+                airLine.name.lowercased().contains(name.lowercased())
+            })
+        }
     }
 }
