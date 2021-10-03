@@ -53,7 +53,7 @@ class ElMataarAPIClient: NSObject, URLSessionDelegate{
                 let statusCode = httpResponse.statusCode
                 
                 
-                if statusCode == 200 {
+                if statusCode == 200 || statusCode == 201{
                     do {
                         if let data = data {
                     onSuccess?(try JSONDecoder().decode(T.self, from: data))

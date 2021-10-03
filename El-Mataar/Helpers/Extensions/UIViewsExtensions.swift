@@ -59,3 +59,10 @@ extension UIViewController{
     }
 }
 
+//MARK:- UITextField
+extension UITextField{
+    func isNotEmpty() -> Bool{
+        return !(self.text == "" || self.text == nil)
+    }
+}
+

@@ -13,12 +13,12 @@ struct AirLinesTableCellViewModel {
 }
 
 class AirLinesTableViewModel {
+    //MARK: Variables
     var airLinesDataSource : Observable<[AirLinesTableCellViewModel]> = Observable([])
-    var allAirLines : AirLines = [] //To Handle Search
-    
-    
-    
+    var allAirLines : AirLines = [] //To Handle Search and forming DetailsViewModel
+
     var didFail : Observable<Bool> = Observable(false)
+    
     
     //MARK: TableView
     func getAirLineForRow(_ row: Int) -> AirLinesTableCellViewModel{
