@@ -55,12 +55,12 @@ class AirLinesTableViewModel {
     
     //MARK: Fetch Data
     func getData(){
-        service.getAirLines { response in
+        service.getAirLines(onSuccess: { (response) in
             self.airLinesDataSource.value = response.compactMap({ airLine in
                 AirLinesTableCellViewModel(id: airLine.id ?? 0, name: airLine.name ?? "")
             })
             self.allAirLines = response
-        } onError: {
+        }) {
             self.didFail.value = true
         }
         

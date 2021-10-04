@@ -64,7 +64,7 @@ class AirLineWebViewController: BaseViewController,WKNavigationDelegate {
         progressView = UIProgressView(progressViewStyle: .default)
         progressView.sizeToFit()
         webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
-        progressView.tintColor = .init(named: K.airLinesRed)
+        progressView.tintColor = UIColor(named: K.airLinesRed)
         progressView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 5)
         webView.addSubview(progressView)
     }

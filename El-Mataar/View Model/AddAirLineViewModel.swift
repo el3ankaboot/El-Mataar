@@ -23,10 +23,10 @@ class AddAirLineViewModel {
     }
     
     func addAirLine(){
-        service.addAirLine { airLine in
+        service.addAirLine(onSuccess: { (airLine) in
             self.successMessage = "\(airLine.name ?? "The Air Line") was added successfully"
             self.success.value = true
-        } onError: {
+        }) {
             self.fail.value = true
         }
 
