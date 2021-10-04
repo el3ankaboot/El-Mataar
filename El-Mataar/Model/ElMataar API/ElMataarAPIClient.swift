@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Reachability
 
 enum RequestVerb: String {
     case post = "POST"
@@ -38,6 +39,13 @@ class ElMataarAPIClient: NSObject, URLSessionDelegate{
         request.timeoutInterval = 30
         request.httpMethod = verb.rawValue;
         
+        let reachability = try! Reachability()
+        switch reachability.connection {
+        case .unavailable , .none:
+            request.cachePolicy = .returnCacheDataDontLoad
+        default:
+            request.cachePolicy = .reloadIgnoringLocalCacheData
+        }
         
         let task = urlSession?.dataTask(with: request) {(data, response, error) in
             

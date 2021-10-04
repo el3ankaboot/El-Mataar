@@ -1,16 +1,20 @@
 PODS:
   - FittedSheets (2.4.1)
+  - ReachabilitySwift (5.0.0)
 
 DEPENDENCIES:
   - FittedSheets
+  - ReachabilitySwift
 
 SPEC REPOS:
   trunk:
     - FittedSheets
+    - ReachabilitySwift
 
 SPEC CHECKSUMS:
   FittedSheets: 839b9d261e446cfa9ae8d7229d266f22b30f8be8
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
 
-PODFILE CHECKSUM: b541565e12af1e61789c30773fa5346e175730ad
+PODFILE CHECKSUM: 20264c018b7a7f1f6e708de9e43c6faabac2a4fb
 
 COCOAPODS: 1.10.1
