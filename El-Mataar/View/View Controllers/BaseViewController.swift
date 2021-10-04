@@ -26,7 +26,7 @@ class BaseViewController : UIViewController{
     func setNavBarColorToWhite(){
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barTintColor = .white
-        navigationController?.navigationBar.tintColor = UIColor(named: "App Tint Color")
+        navigationController?.navigationBar.tintColor = UIColor(named: K.appTintColor)
     }
     func showNavBarShadow(){
         navigationController?.navigationBar.layer.shadowColor = UIColor.black.withAlphaComponent(0.2).cgColor
@@ -36,7 +36,7 @@ class BaseViewController : UIViewController{
         navigationController?.navigationBar.layer.masksToBounds = false
     }
     func setupNavigationBarTitleFont(){
-        if let vodafoneFont = UIFont(name: "Vodafone Rg Regular", size: 24){
+        if let vodafoneFont = UIFont(name: K.vodafoneRgRegular, size: 24){
             navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: vodafoneFont]
         }
     }

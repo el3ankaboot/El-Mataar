@@ -21,4 +21,8 @@ struct AirLineDetailsViewModel{
         self.address = airLine.headQuaters ?? ""
         self.website = airLine.website ?? ""
     }
+    
+    func goToWebsite(){
+        Router.navigateTo(.airLineWebView(url: website))
+    }
 }

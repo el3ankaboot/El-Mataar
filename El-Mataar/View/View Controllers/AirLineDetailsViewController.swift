@@ -36,4 +36,9 @@ class AirLineDetailsViewController: BaseViewController {
         self.airLineSloganLabel.text = viewModel.slogan
         self.airLineAddressLabel.text = viewModel.address
     }
+    
+    //MARK:- Actions
+    @IBAction func didPressVisit(_ sender: Any) {
+        viewModel.goToWebsite()
+    }
 }

@@ -30,6 +30,7 @@ class Router{
 enum NavigationTarget {
     case airLineDetails(airLineDetailsViewModel: AirLineDetailsViewModel)
     case addAirLines
+    case airLineWebView(url: String)
     
     func getViewController()-> UIViewController{
         switch self {
@@ -39,6 +40,10 @@ enum NavigationTarget {
             return vc
         case .addAirLines:
             return AddAirLineViewController.instantiate()
+        case .airLineWebView(let url):
+            let vc = AirLineWebViewController.instantiate()
+            vc.url = url
+            return vc
         }
     }
 }
