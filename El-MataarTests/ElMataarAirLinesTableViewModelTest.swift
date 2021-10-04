@@ -5,7 +5,6 @@
 //  Created by Gamal Mostafa on 04/10/2021.
 //
 
-import Foundation
 import XCTest
 @testable import El_Mataar
 

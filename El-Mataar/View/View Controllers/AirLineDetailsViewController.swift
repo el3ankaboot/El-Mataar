@@ -15,7 +15,7 @@ class AirLineDetailsViewController: BaseViewController {
     @IBOutlet weak var airLineNameLabel: UILabel!
     @IBOutlet weak var airLineCountryLabel: UILabel!
     @IBOutlet weak var airLineSloganLabel: UILabel!
-    @IBOutlet weak var airLineAddressLabel: UILabel!
+    @IBOutlet weak var airLineHeadQuartersAddressLabel: UILabel!
     
     //MARK:- Injections
     var viewModel: AirLineDetailsViewModel!
@@ -34,7 +34,7 @@ class AirLineDetailsViewController: BaseViewController {
         self.airLineNameLabel.text = viewModel.name
         self.airLineCountryLabel.text = viewModel.country
         self.airLineSloganLabel.text = viewModel.slogan
-        self.airLineAddressLabel.text = viewModel.address
+        self.airLineHeadQuartersAddressLabel.text = viewModel.headQuarters
     }
     
     //MARK:- Actions

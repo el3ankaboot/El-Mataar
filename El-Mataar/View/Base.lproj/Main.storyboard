@@ -272,8 +272,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="airLineAddressLabel" destination="qw4-wI-L8l" id="nFR-iI-PeG"/>
                         <outlet property="airLineCountryLabel" destination="9C1-g8-MN4" id="FWq-pu-uHs"/>
+                        <outlet property="airLineHeadQuartersAddressLabel" destination="qw4-wI-L8l" id="nFR-iI-PeG"/>
                         <outlet property="airLineNameLabel" destination="1Hm-vI-BwG" id="wCX-kZ-m16"/>
                         <outlet property="airLineSloganLabel" destination="UGp-aQ-X99" id="4MJ-PL-FLu"/>
                         <outlet property="detailsView" destination="tqh-Mg-YBh" id="lqj-D3-ZND"/>

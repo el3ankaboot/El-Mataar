@@ -11,14 +11,14 @@ struct AirLineDetailsViewModel{
     let name: String
     let country: String
     let slogan: String
-    let address: String
+    let headQuarters: String
     let website : String
     
     init(withAirLine airLine: AirLine){
         self.name = airLine.name ?? ""
         self.country = airLine.country ?? ""
         self.slogan = airLine.slogan ?? ""
-        self.address = airLine.headQuaters ?? ""
+        self.headQuarters = airLine.headQuaters ?? ""
         self.website = airLine.website ?? ""
     }
     
