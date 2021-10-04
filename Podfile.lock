@@ -1,20 +1,24 @@
 PODS:
   - FittedSheets (2.4.1)
+  - IQKeyboardManager (6.5.6)
   - ReachabilitySwift (5.0.0)
 
 DEPENDENCIES:
   - FittedSheets
+  - IQKeyboardManager
   - ReachabilitySwift
 
 SPEC REPOS:
   trunk:
     - FittedSheets
+    - IQKeyboardManager
     - ReachabilitySwift
 
 SPEC CHECKSUMS:
   FittedSheets: 839b9d261e446cfa9ae8d7229d266f22b30f8be8
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
 
-PODFILE CHECKSUM: 20264c018b7a7f1f6e708de9e43c6faabac2a4fb
+PODFILE CHECKSUM: 1f95fb8693f1ca32f5d02265d2ec9bfb3e0fdeb4
 
 COCOAPODS: 1.10.1
