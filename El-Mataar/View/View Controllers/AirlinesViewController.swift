@@ -18,12 +18,16 @@ class AirlinesViewController: BaseViewController {
     //MARK:- Variables
     private var viewModel = AirLinesTableViewModel(service: ElMataarService())
     
+    //MARK: Refresh Control
+    private let refreshControl = UIRefreshControl()
+    
     //MARK:- Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Countries"
         setupTableView()
         getData()
+        setupRefreshControl()
     }
     
     //MARK: GetData
@@ -34,12 +38,14 @@ class AirlinesViewController: BaseViewController {
             self?.tableView.reloadData()
             if let activityIndicator = self?.activityIndicator{
                 self?.stopAnimating(activityIndicator)
+                self?.refreshControl.endRefreshing()
             }
             
         }
         viewModel.didFail.bind { [weak self] fail in
             if fail {
                 self?.showErrorAlert()
+                self?.refreshControl.endRefreshing()
             }
         }
         
@@ -92,5 +98,18 @@ extension AirlinesViewController : UITableViewDelegate, UITableViewDataSource {
         viewModel.handleCellSelection(indexPath.row)
     }
     
+}
+
+//MARK:- Refresh Control
+extension AirlinesViewController {
+    func setupRefreshControl(){
+        tableView.refreshControl = refreshControl
+        refreshControl.tintColor = UIColor(named: K.airLinesRed)
+        refreshControl.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
+    }
+    
+    @objc private func refreshData(_ sender: Any) {
+        self.getData()
+    }
 }
 
