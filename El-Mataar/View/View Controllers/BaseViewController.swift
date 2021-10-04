@@ -61,10 +61,12 @@ class BaseViewController : UIViewController{
     
     //MARK: ActivityIndicator
     func animateActivityIndicator(_ activityIndicator:UIActivityIndicatorView){
+        view.isUserInteractionEnabled = false
         activityIndicator.isHidden = false
         activityIndicator.startAnimating()
     }
     func stopAnimating(_ activityIndicator:UIActivityIndicatorView){
+        view.isUserInteractionEnabled = true
         activityIndicator.isHidden = true
         activityIndicator.stopAnimating()
     }

@@ -13,7 +13,7 @@
 		BA0D77DE27078254002938AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0D77DC27078254002938AB /* Main.storyboard */; };
 		BA0D77E027078254002938AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0D77DF27078254002938AB /* Assets.xcassets */; };
 		BA0D77E327078254002938AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0D77E127078254002938AB /* LaunchScreen.storyboard */; };
-		BA0D77EE27078255002938AB /* El_MataarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D77ED27078255002938AB /* El_MataarTests.swift */; };
+		BA0D77EE27078255002938AB /* ElMataarMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D77ED27078255002938AB /* ElMataarMockService.swift */; };
 		BA0D77F927078255002938AB /* El_MataarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D77F827078255002938AB /* El_MataarUITests.swift */; };
 		BA0D780827078F6C002938AB /* UIViewsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D780727078F6C002938AB /* UIViewsExtensions.swift */; };
 		BA0D780E27079389002938AB /* AirlinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0D780D27079389002938AB /* AirlinesTableViewCell.swift */; };
@@ -35,6 +35,7 @@
 		BAB6C78B270A6B08007A6EE4 /* AddAirLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6C78A270A6B08007A6EE4 /* AddAirLineViewModel.swift */; };
 		BAB6C78D270A765F007A6EE4 /* AirLineWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6C78C270A765F007A6EE4 /* AirLineWebViewController.swift */; };
 		BAB6C78F270A791B007A6EE4 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6C78E270A791B007A6EE4 /* K.swift */; };
+		BAB6C791270B6E2F007A6EE4 /* ElMataarAirLinesTableViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6C790270B6E2F007A6EE4 /* ElMataarAirLinesTableViewModelTest.swift */; };
 		EEE7CCC352ABD6C0EA51A114 /* libPods-El-Mataar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 195C51960970FCC677A83DB0 /* libPods-El-Mataar.a */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +67,7 @@
 		BA0D77DF27078254002938AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA0D77E227078254002938AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA0D77E927078255002938AB /* El-MataarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El-MataarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA0D77ED27078255002938AB /* El_MataarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = El_MataarTests.swift; sourceTree = "<group>"; };
+		BA0D77ED27078255002938AB /* ElMataarMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElMataarMockService.swift; sourceTree = "<group>"; };
 		BA0D77EF27078255002938AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA0D77F427078255002938AB /* El-MataarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El-MataarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0D77F827078255002938AB /* El_MataarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = El_MataarUITests.swift; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 		BAB6C78A270A6B08007A6EE4 /* AddAirLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAirLineViewModel.swift; sourceTree = "<group>"; };
 		BAB6C78C270A765F007A6EE4 /* AirLineWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirLineWebViewController.swift; sourceTree = "<group>"; };
 		BAB6C78E270A791B007A6EE4 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		BAB6C790270B6E2F007A6EE4 /* ElMataarAirLinesTableViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElMataarAirLinesTableViewModelTest.swift; sourceTree = "<group>"; };
 		E330847CEAA1EC5A60854F38 /* Pods-El-MataarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-MataarTests.release.xcconfig"; path = "Target Support Files/Pods-El-MataarTests/Pods-El-MataarTests.release.xcconfig"; sourceTree = "<group>"; };
 		F2A82A14CA196F2D95D85A9B /* Pods-El-Mataar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-Mataar.debug.xcconfig"; path = "Target Support Files/Pods-El-Mataar/Pods-El-Mataar.debug.xcconfig"; sourceTree = "<group>"; };
 		F63B0DCF8785EBA2906245D5 /* Pods-El-MataarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El-MataarTests.debug.xcconfig"; path = "Target Support Files/Pods-El-MataarTests/Pods-El-MataarTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,7 +175,8 @@
 		BA0D77EC27078255002938AB /* El-MataarTests */ = {
 			isa = PBXGroup;
 			children = (
-				BA0D77ED27078255002938AB /* El_MataarTests.swift */,
+				BA0D77ED27078255002938AB /* ElMataarMockService.swift */,
+				BAB6C790270B6E2F007A6EE4 /* ElMataarAirLinesTableViewModelTest.swift */,
 				BA0D77EF27078255002938AB /* Info.plist */,
 			);
 			path = "El-MataarTests";
@@ -497,7 +500,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA0D77EE27078255002938AB /* El_MataarTests.swift in Sources */,
+				BA0D77EE27078255002938AB /* ElMataarMockService.swift in Sources */,
+				BAB6C791270B6E2F007A6EE4 /* ElMataarAirLinesTableViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

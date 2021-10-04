@@ -16,7 +16,7 @@ class AirlinesViewController: BaseViewController {
     @IBOutlet weak var searchTextField: UITextField!
     
     //MARK:- Variables
-    private var viewModel = AirLinesTableViewModel()
+    private var viewModel = AirLinesTableViewModel(service: ElMataarService())
     
     //MARK:- Life cycle
     override func viewDidLoad() {

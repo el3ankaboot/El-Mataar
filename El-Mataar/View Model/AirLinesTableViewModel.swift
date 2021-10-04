@@ -19,6 +19,13 @@ class AirLinesTableViewModel {
     
     var didFail : Observable<Bool> = Observable(false)
     
+    //MARK: Injections
+    var service: ElMataarServiceProtocol!
+    
+    //MARK:- Init
+    init(service: ElMataarServiceProtocol) {
+        self.service = service
+    }
     
     //MARK: TableView
     func getAirLineForRow(_ row: Int) -> AirLinesTableCellViewModel{
@@ -48,7 +55,7 @@ class AirLinesTableViewModel {
     
     //MARK: Fetch Data
     func getData(){
-        ElMataarAPIClient.shared.getAirLines { response in
+        service.getAirLines { response in
             self.airLinesDataSource.value = response.compactMap({ airLine in
                 AirLinesTableCellViewModel(id: airLine.id ?? 0, name: airLine.name ?? "")
             })

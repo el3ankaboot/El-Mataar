@@ -7,12 +7,16 @@
 
 import Foundation
 
-extension ElMataarAPIClient {
+protocol ElMataarServiceProtocol {
+    func getAirLines(onSuccess: ((AirLines)-> Void)?, onError: (()->Void)?)
+    func addAirLine(onSuccess: ((AirLine)-> Void)?, onError: (()->Void)?)
+}
+
+class ElMataarService : ElMataarServiceProtocol {
     func getAirLines(onSuccess: ((AirLines)-> Void)?, onError: (()->Void)?){
-        launchJSONRequest(verb: .get, onSuccess: onSuccess, onError: onError)
+        ElMataarAPIClient.shared.launchJSONRequest(verb: .get, onSuccess: onSuccess, onError: onError)
     }
-    
     func addAirLine(onSuccess: ((AirLine)-> Void)?, onError: (()->Void)?){
-        launchJSONRequest(verb: .post, onSuccess: onSuccess, onError: onError)
+        ElMataarAPIClient.shared.launchJSONRequest(verb: .post, onSuccess: onSuccess, onError: onError)
     }
 }

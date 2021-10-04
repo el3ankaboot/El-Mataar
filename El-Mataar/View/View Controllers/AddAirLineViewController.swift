@@ -19,7 +19,7 @@ class AddAirLineViewController : BaseViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     //MARK:- Variables
-    private var viewModel = AddAirLineViewModel()
+    private var viewModel = AddAirLineViewModel(service: ElMataarService())
     
     //MARK:- Life Cycle
     override func viewDidLoad() {
