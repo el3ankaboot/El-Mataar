@@ -15,11 +15,16 @@ final class ElMataarMockService : ElMataarServiceProtocol{
             let airLine = AirLine(id: i, name: "AirLine\(i)", country: "Country\(i)", logo: nil, slogan: "Slogan\(i)", headQuaters: "HQ\(i)", website: "https://www.google.com/", established: nil, requestedID: nil)
             airLines.append(airLine)
         }
-        onSuccess!(airLines)
+        if let onSuccess = onSuccess{
+        onSuccess(airLines)
+        }
     }
     
     func addAirLine(onSuccess: ((AirLine) -> Void)?, onError: (() -> Void)?) {
-        
+        let airLine = AirLine(id: 10, name: "Added Airline", country: "Country", logo: nil, slogan: "Slogan", headQuaters: "HQ", website: "https://www.google.com/", established: nil, requestedID: nil)
+        if let onSuccess = onSuccess{
+            onSuccess(airLine)
+        }
     }
     
 
