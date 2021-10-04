@@ -15,7 +15,7 @@ To run the application follow the following steps :
 * Run the following command ``$ pod install`` on your terminal to install the pods.
 * Open ``El-Mataar.xcworkspace``
 * Run the application.
-
+* If you are using Xcode11, some errors will appear in xcode, so kindly switch to branch ``Xcode11`` and no errors will appear.
 
 ##### Note:
 Kindly note that adding new airline adds dummy data as "Name NaaN" and this is related to the API and not an issue from the application side.

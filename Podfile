@@ -7,6 +7,7 @@ target 'El-Mataar' do
   # use_frameworks!
 pod 'FittedSheets'
 pod 'ReachabilitySwift'
+pod 'IQKeyboardManager'
 
 
   target 'El-MataarTests' do
