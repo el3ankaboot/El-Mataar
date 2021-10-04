@@ -13,6 +13,7 @@ To run the application follow the following steps :
 
 * Clone this repository using the command ``$ git clone https://github.com/el3ankaboot/El-Mataar`` on your terminal , or by using sourcetree or by any other method you are comfortable with.
 * Run the following command ``$ pod install`` on your terminal to install the pods.
+* Navigate to El-Mataar folder
 * Open ``El-Mataar.xcworkspace``
 * Run the application.
 * If you are using Xcode11, some errors will appear in xcode, so kindly switch to branch ``Xcode11`` and no errors will appear.
@@ -20,3 +21,6 @@ To run the application follow the following steps :
 ##### Note:
 Kindly note that adding new airline adds dummy data as "Name NaaN" and this is related to the API and not an issue from the application side.
 I tried to add a JSON from the app and from Postman and also it was added with dummy data. Thus, you will find in the application the API call doesn't take any parameters.
+
+
+After Adding a new airline, kindly pull to refresh the tableview to find the new added airline.
